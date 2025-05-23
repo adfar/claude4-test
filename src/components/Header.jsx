@@ -15,7 +15,7 @@ const Header = ({ onRefresh, isLoading, lastUpdated }) => {
               <Activity className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-white">
+              <h1 className="text-2xl font-bold text-yellow-400">
                 Stock Tracker
               </h1>
               <p className="text-sm text-white hidden sm:block">
