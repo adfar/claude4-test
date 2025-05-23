@@ -65,9 +65,9 @@ function App() {
           <div className="mb-6 bg-red-500/20 border border-red-500/30 rounded-lg p-4">
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-red-400 rounded-full"></div>
-              <span className="text-red-300 font-medium">Connection Error</span>
+              <span className="text-red-100 font-medium">Connection Error</span>
             </div>
-            <p className="text-red-200 mt-1">{errors.general}</p>
+            <p className="text-red-100 mt-1">{errors.general}</p>
           </div>
         )}
 
@@ -106,13 +106,13 @@ function App() {
         {/* Footer */}
         <footer className="text-center py-8 border-t border-white/10">
           <div className="space-y-2">
-            <p className="text-gray-300 text-sm">
+            <p className="text-gray-200 text-sm">
               Real-time stock data powered by Yahoo Finance
             </p>
-            <p className="text-gray-400 text-xs">
+            <p className="text-gray-300 text-xs">
               Data refreshes automatically every 30 seconds during market hours
             </p>
-            <div className="flex items-center justify-center space-x-4 text-xs text-gray-500">
+            <div className="flex items-center justify-center space-x-4 text-xs text-gray-400">
               <span>Built with React + Vite</span>
               <span>•</span>
               <span>Styled with Tailwind CSS</span>

@@ -30,8 +30,8 @@ const Header = ({ onRefresh, isLoading, lastUpdated }) => {
             <div className="hidden md:flex items-center space-x-2">
               <div className={`flex items-center space-x-1 px-3 py-1 rounded-full text-sm font-medium ${
                 marketStatus.isOpen 
-                  ? 'bg-green-500/20 text-green-400' 
-                  : 'bg-red-500/20 text-red-400'
+                  ? 'bg-green-500/20 text-green-200' 
+                  : 'bg-red-500/20 text-red-200'
               }`}>
                 <div className={`w-2 h-2 rounded-full ${
                   marketStatus.isOpen 
@@ -56,7 +56,7 @@ const Header = ({ onRefresh, isLoading, lastUpdated }) => {
               disabled={isLoading}
               className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
                 isLoading
-                  ? 'bg-gray-600 text-gray-400 cursor-not-allowed'
+                  ? 'bg-gray-600 text-gray-300 cursor-not-allowed'
                   : 'bg-blue-600 hover:bg-blue-500 text-white hover:scale-105 active:scale-95'
               }`}
             >
@@ -74,8 +74,8 @@ const Header = ({ onRefresh, isLoading, lastUpdated }) => {
         <div className="md:hidden pb-3 text-white">
           <div className={`inline-flex items-center space-x-1 px-3 py-1 rounded-full text-sm font-medium ${
             marketStatus.isOpen 
-              ? 'bg-green-500/20 text-green-400' 
-              : 'bg-red-500/20 text-red-400'
+              ? 'bg-green-500/20 text-green-200' 
+              : 'bg-red-500/20 text-red-200'
           }`}>
             <div className={`w-2 h-2 rounded-full ${
               marketStatus.isOpen 

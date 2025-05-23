@@ -7,12 +7,12 @@ const StockCard = ({ stock, isSelected, onClick, hasError, errorMessage }) => {
       <div className="bg-red-600/50 backdrop-blur-sm border border-red-500/50 rounded-xl p-6 hover:bg-red-600/60 transition-all duration-300">
         <div className="flex items-center justify-between mb-2">
           <h3 className="text-lg font-bold text-white">{stock.symbol}</h3>
-          <div className="text-red-400 text-sm">Error</div>
+          <div className="text-red-200 text-sm">Error</div>
         </div>
-        <p className="text-red-300 text-sm">{errorMessage}</p>
+        <p className="text-red-100 text-sm">{errorMessage}</p>
         <button
           onClick={onClick}
-          className="mt-3 text-blue-400 hover:text-blue-300 text-sm underline"
+          className="mt-3 text-blue-300 hover:text-blue-200 text-sm underline"
         >
           Retry
         </button>
@@ -108,7 +108,7 @@ const StockCard = ({ stock, isSelected, onClick, hasError, errorMessage }) => {
         <div className="space-y-2">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-1">
-              <Volume2 className="w-3 h-3 text-gray-400" />
+              <Volume2 className="w-3 h-3 text-gray-300" />
               <span className="text-white">Volume</span>
             </div>
             <span className="text-white font-medium">
@@ -117,7 +117,7 @@ const StockCard = ({ stock, isSelected, onClick, hasError, errorMessage }) => {
           </div>
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-1">
-              <BarChart3 className="w-3 h-3 text-gray-400" />
+              <BarChart3 className="w-3 h-3 text-gray-300" />
               <span className="text-white">Prev Close</span>
             </div>
             <span className="text-white font-medium">
@@ -132,8 +132,8 @@ const StockCard = ({ stock, isSelected, onClick, hasError, errorMessage }) => {
         <div className="relative mt-4 flex justify-between items-center">
           <div className={`inline-flex items-center space-x-1 px-2 py-1 rounded-full text-xs font-medium ${
             stock.marketState === 'REGULAR' 
-              ? 'bg-green-500/20 text-green-400' 
-              : 'bg-yellow-500/20 text-yellow-400'
+              ? 'bg-green-500/20 text-green-200' 
+              : 'bg-yellow-500/20 text-yellow-200'
           }`}>
             <div className={`w-1.5 h-1.5 rounded-full ${
               stock.marketState === 'REGULAR' ? 'bg-green-400' : 'bg-yellow-400'
